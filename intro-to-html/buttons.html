@@ -1,0 +1,141 @@
+<style>
+  button.subsribe-button {
+    background-color: rgb(202, 0, 0);
+    color: white;
+    border: none;
+    height: 36px; /*instead of using height and width, padding will be a good choise*/
+    width: 105px;
+    border-radius: 2px;
+    cursor: pointer;
+    /* when mouse over it refers a clickable cursor */
+    margin-right: 8px;
+    transition: opacity 0.15s; /*if it is used in :hover, it can be just
+    applied in hover case and when hover is over immediatly change property
+    without transition. That's why use transition in base css*/
+    /* 0.15s is natural value*/
+    vertical-align: top; /* align veritally regarding of box borders not text*/
+    /* by default it align items accoording to their texts, kutunun sınırlarına
+    göre hizalama yapar varsayılanı üstte altta boşluk bırakarak yazıya göredir */
+  }
+
+  button.subsribe-button:hover {
+    /* when hover it is working*/
+    /*using rgba intead of opacity will reduce opacity in the color, not other elements*/
+    opacity: 0.7;
+  }
+
+  button.subsribe-button:active{ /* when clicked it is working*/
+    opacity: 0.5;
+  }
+
+  button.join-button {
+    vertical-align: top;
+    background-color: white;
+    border-color: rgb(12, 128, 173);
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(12, 128, 173);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background-color 0.2s, /* comma for multiple*/
+      color 0.2s;
+  }
+
+  button.join-button:hover {
+    background-color: rgb(12, 128, 173);
+    color: white;
+  }
+  button.join-button:active {
+    opacity: 0.7;
+  }
+
+  button.tweet-button {
+    background-color: rgb(0, 132, 255);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 74px;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+  }
+
+  .tweet-button:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* horizontal, vertical, blur, color*/
+  }
+
+  .request-button{
+    width: 100px;
+    height: 36px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: opacity 0.2s;
+    font-size: smaller;
+  }
+  .request-button:hover{
+    opacity: 0.7;
+  }
+
+  .addToCard-button {
+    width: 200px;
+    height: 36px;
+    background-color: rgb(233, 221, 119);
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .signup-button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: rgb(129, 172, 64);
+    color: white;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.15s,
+    padding 0.15s;
+  }
+  .signup-button:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 50px;
+  }
+  .save-button{
+    width: 80px;
+    height: 36px;
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: background-color 0.15s;
+  }
+  .save-button:hover{
+    background-color: rgb(149, 214, 216);;
+  }
+
+
+</style>
+
+<button class="subsribe-button">SUBSCRIBE</button>
+<button class="join-button">JOIN</button>
+<button class="tweet-button">Tweet</button>
+<button class="request-button">Request now</button>
+<button class="addToCard-button">Add to Cart</button>
+<button class="signup-button">Sign up</button>
+<button class="save-button">Save</button>

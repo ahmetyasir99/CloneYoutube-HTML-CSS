@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .tweet-div {
+      display: inline-block;
+      box-shadow: 0px 0px 5px gray;
+      padding: 5px 15px;
+    }
+    .img1 {
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      object-fit: cover;
+      vertical-align: middle;
+    }
+    .text-input {
+      border: none;
+      margin: 0px 8px;
+      font-size: large;
+      
+    }
+    .tweet-button {
+      background-color: blue;
+      color: white;
+      font-weight: bolder;
+      border: none;
+      padding: 7px 15px;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+    .tweet-button:hover {
+      box-shadow: 0px 5px 5px gray;
+    }
+    .grid-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+    .name {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      margin-bottom: 0px;
+      margin-left: 5px;
+    }
+    .status {
+      margin-top: 0px;
+      color: gray;
+      margin-left: 5px;
+    }
+    .add-button {
+      background-color: blue;
+      color: white;
+      padding: 8px 18px;
+      border: none;
+      border-radius: 5px;
+    }
+    .grid-div {
+      display: inline-block;
+      box-shadow: 0px 0px 5px gray;
+      padding: 10px;
+    }
+    .profile-pic {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 30px;
+      vertical-align: middle;
+    }
+    .profile-pic-div,.info-div, .button-div {
+      display: inline-block;
+    }
+    .follow-button {
+      background-color: blue;
+      color: white;
+      padding: 5px 5px;
+      vertical-align: middle;
+    }
+    .info-div {
+      vertical-align: middle;
+      width: 150px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="tweet-div">
+    <img class="img1" src="/thumbnails/142774.jpg" alt="">
+    <input class="text-input" type="text" placeholder="What's happening?">
+    <button class="tweet-button">Tweet</button>
+  </div>
+  <div>
+
+  
+    <div class="grid-div">
+      <img class="grid-img" src="/thumbnails/142774.jpg" alt="">
+      <p class="name">Oliver</p>
+      <p class="status">2 mutual friends</p>
+      <button class="add-button">Add Friend</button>
+    </div>
+    <div class="grid-div">
+      <img class="grid-img" src="/thumbnails/142774.jpg" alt="">
+      <p class="name">Oliver</p>
+      <p class="status">2 mutual friends</p>
+      <button class="add-button">Add Friend</button>
+    </div>
+    <div class="grid-div">
+      <img class="grid-img" src="/thumbnails/142774.jpg" alt="">
+      <p class="name">Oliver</p>
+      <p class="status">2 mutual friends</p>
+      <button class="add-button">Add Friend</button>
+    </div>
+  </div>
+
+  <div style="width: 400px;">
+    <div class="profile-pic-div">
+      <img class="profile-pic" src="/thumbnails/142774.jpg" alt="">
+    </div>
+    <div class="info-div">
+      <div><p class="name">Oliver</p></div>
+      <div><p class="status">The Cat</p></div>
+      <div><p class="popularity" style="margin-left: 5px">Popular</p></div>
+    </div>
+    <div class="button-div">
+      <button class="follow-button">Follow</button>
+    </div>
+  </div>
+  <div style="width: 400px;">
+    <div class="profile-pic-div">
+      <img class="profile-pic" src="/thumbnails/142774.jpg" alt="">
+    </div>
+    <div class="info-div">
+      <div><p class="name">Oliver</p></div>
+      <div><p class="status">The Cat</p></div>
+      <div><p class="popularity" style="margin-left: 5px">Popular</p></div>
+    </div>
+    <div class="button-div">
+      <button class="follow-button">Follow</button>
+    </div>
+  </div>
+  
+</body>
+</html>

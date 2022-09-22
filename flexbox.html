@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Practice</title>
+</head>
+
+<body style="padding-bottom:200px;">
+  <div style="
+  /*flexbox does not require initial widths for childs but grid requires*/
+  display:flex;
+  flex-direction:row;
+  ">
+    <div style="background-color: lightblue;">div 1</div>
+    <div style="background-color: lightpink;">div 2 <p>ss</p>
+    </div>
+  </div>
+
+  <div style="
+  /*flexbox does not require initial widths for childs but grid requires*/
+  display:flex;
+  flex-direction:row;
+  margin-top: 30px;
+  ">
+    <div style="background-color: lightblue; width: 100px;">100px</div>
+    <div style="background-color: lightpink;
+     flex:1; /*same as 1fr in grid, remain rest of the container*/
+     ">flex1
+      <p>ss</p>
+    </div>
+  </div>
+
+  <div style="
+  /*flexbox does not require initial widths for childs but grid requires*/
+  display:flex;
+  flex-direction:row;
+  margin-top: 30px;
+  ">
+    <div style="background-color: lightblue; width: 100px;">100px</div>
+    <div style="background-color: lightpink;
+     flex:1; /*same as 1fr in grid, remain rest of the container*/
+     /*flex numbers of divs are relative. whole thing is divided*/
+     /*grid requires measure or number of divs inside it but flex is not
+     flex can used varying number of divs situation*/
+     ">flex1
+      <p>ss</p>
+    </div>
+    <div style="background-color: lightblue; flex: 2;">flex 2</div>
+  </div>
+
+  <div style="
+  margin-top: 30px;
+  height: 70px;
+  border: 1px solid black;
+
+  display:flex;
+  flex-direction:row;
+  justify-content: center; /*determine where to align elements*/
+ 
+  ">
+    <div style="background-color: lightblue; width: 100px;">100px</div>
+    <div style="background-color: lightpink; width: 100px;">100px</div>
+    <div style="background-color: lightblue; width: 100px;">100px</div>
+  </div>
+
+  <div style="
+  margin-top: 30px;
+  height: 70px;
+  border: 1px solid black;
+
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between; /*determine where to align elements*/
+ 
+  ">
+    <div style="background-color: lightblue; width: 100px;">100px</div>
+    <div style="background-color: lightpink; width: 100px;">100px</div>
+    <div style="background-color: lightblue; width: 100px;">100px</div>
+  </div>
+
+  <div style="
+  margin-top: 30px;
+  height: 70px;
+  border: 1px solid black;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between; /*determine where to align items horizontally*/
+  align-items:center /*determine where to align items vertically*/
+ 
+  ">
+    <div style="background-color: lightblue; width: 100px;">100px</div>
+    <div style="background-color: lightpink; width: 100px;">100px</div>
+    <div style="background-color: lightblue; width: 100px;">100px</div>
+  </div>
+
+</body>
+
+</html>
