@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position Practice</title>
+</head>
+
+<body style="
+height: 3000px; 
+padding-top: 60px; /*in this case, header does not cover other element
+best practice ise giving padding to body, not giving margin-top to first element
+*/
+padding-left: 80px; /*avoiding conflict between sidebar and other elements*/
+">
+  <div style="
+  background-color: black;
+  color:white;
+  position: fixed; /*fix the position in the page*/
+  top: 0px; /*specifies how element far away from top*/
+  left: 0px;/*if opposites are used, the element stretch*/
+  right:0px;
+  height: 50px;
+  ">Header</div>
+
+  <div style="
+  background-color:green;
+  color:white;
+  position: fixed;
+  left:0;
+  top:50px;
+  bottom: 0;
+  width: 72px;
+  ">
+    sidebar
+  </div>
+
+  <div style="
+  background-color:brown;
+  width: 100px;
+  position: fixed;
+  right: 0;
+  top: 50px;
+  bottom: 0;
+  ">
+  right-sidebar
+  </div>
+
+  <div style="
+  position:fixed;
+  bottom: 20px;
+  right: 70px;
+  background-color: black;
+  color: white;
+  ">
+    bottom-right
+  </div>
+  <div style="
+  background-color: lightblue;
+  height: 200px;
+  width: 200px;
+  ">div1</div>
+  <div style="
+  background-color: lightpink;
+  height: 200px;
+  width: 200px;
+  ">div2</div>
+
+  <div style="
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom:0;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ">
+  <div style="
+  width: 300px;
+
+  background-color: white;
+  border-radius:7px;
+  padding: 15px;
+  "><div>Modal Title</div>
+  <div>This is a modal</div></div>
+
+  </div>
+</body>
+
+</html>

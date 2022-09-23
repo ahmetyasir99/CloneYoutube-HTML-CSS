@@ -3,12 +3,19 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom: 1px solid rgb(221, 211, 211);
 }
 
 .left-section {
   display: flex;
   align-items: center;
 }
+
 .hamburger-menu {
   height: 24px;
   margin-left: 24px;
@@ -34,9 +41,11 @@
   padding-left: 10px;
   font-size: 16px;
   border: 1px solid rgb(202, 194, 194);
-  border-radius:2px;
-  box-shadow: inset 1px 1px 1px rgb(0, 0, 0,0.05); /*inset give shadow to inside*/
-  width:0; /*search bar's default minimum width zeroed
+  border-radius: 2px;
+  box-shadow: inset 1px 1px 1px rgb(0, 0, 0, 0.05);
+  /*inset give shadow to inside*/
+  width: 0;
+  /*search bar's default minimum width zeroed
   it can shrinnk whenever width is getting 0*/
 }
 
@@ -45,6 +54,7 @@
   font-family: Roboto, Arial;
   font-size: 16px;
 }
+
 .search-button {
   height: 40px;
   width: 66px;
@@ -78,23 +88,25 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-shrink: 0; /* if window width is decreased
+  flex-shrink: 0;
+  /* if window width is decreased
   flex is not shrink that means not getting smaller
   that why it can protect itself from shrinking*/
 }
 
-.upload-icon{
-height: 24px;
-}
-.youtube-apps-icon{
-height: 24px;
-}
-.notifications-icon{
+.upload-icon {
   height: 24px;
 }
-.current-user-picture{
+
+.youtube-apps-icon {
+  height: 24px;
+}
+
+.notifications-icon {
+  height: 24px;
+}
+
+.current-user-picture {
   height: 32px;
   border-radius: 16px;
 }
-
-

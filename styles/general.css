@@ -7,4 +7,6 @@ p {
 
 body {
   margin: 0; /* body has 8px margin in default*/
+  padding-top: 80px; /*avoiding conflict*/
+  padding-left: 80px; /*avoiding conflict*/
 }
