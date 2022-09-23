@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <style scoped>
+    .cat {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .image-div {
+      width: 50px;
+      display: flex;
+      margin-right: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+    .image {
+      width: 50px;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+    .first-line {
+      font-family: Roboto;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .time {
+      color: rgb(175, 166, 166);
+      font-family: Roboto;
+      font-size: small;
+    }
+    .second-line {
+      font-family: Roboto;
+      font-size: small;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .third-line {
+      font-family: Roboto;
+      font-size: small;
+      color: rgb(175, 166, 166);
+    }
+  </style>
+  <div class="container" style="width: 350px; border: 1px solid black; padding: 10px;">
+    <div style="font-family:Roboto; color:rgb(175, 166, 166);margin-bottom: 10px;">All Inboxes</div>
+    <div class="cat">
+      <div class="image-div">
+        <img class="image" src="/channel-pictures/cat2.jpg" alt="">
+      </div>
+      <div class="info-div" style="flex:1">
+        <div style="display:flex;justify-content: space-between;">
+          <div class="first-line">Chew Promotions</div>
+          <div class="time">4:58 PM</div>
+        </div>
+        <div class="second-line">Biggest sales of the year!</div>
+        <div class="third-line">Hey there! We're writing to tell you about our...</div>
+      </div>
+    </div>
+
+    <div class="cat">
+      <div class="image-div">
+        <img class="image" src="/channel-pictures/cat2.jpg" alt="">
+      </div>
+      <div class="info-div" style="flex:1">
+        <div style="display:flex;justify-content: space-between;">
+          <div class="first-line">Chew Promotions</div>
+          <div class="time">4:58 PM</div>
+        </div>
+        <div class="second-line">Biggest sales of the year!</div>
+        <div class="third-line">Hey there! We're writing to tell you about our...</div>
+      </div>
+    </div>
+
+    <div class="cat">
+      <div class="image-div">
+        <img class="image" src="/channel-pictures/cat2.jpg" alt="">
+      </div>
+      <div class="info-div" style="flex:1">
+        <div style="display:flex;justify-content: space-between;">
+          <div class="first-line">Chew Promotions</div>
+          <div class="time">4:58 PM</div>
+        </div>
+        <div class="second-line">Biggest sales of the year!</div>
+        <div class="third-line">Hey there! We're writing to tell you about our...</div>
+      </div>
+    </div>
+  </div>
+
+  <style scoped>
+    div {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .whole {
+      width: 410px;
+      display: flex;
+      margin-top: 50px;
+    }
+    .profile-pic {
+      width: 50px;
+      border-radius: 30px;
+    }
+    .video {
+      border: 1px solid rgb(220, 220, 220);
+      border-radius: 15px;
+      display: flex;
+      overflow: hidden; /*removes overflow from element, used for background - border conflict*/
+      margin-top: 15px;
+    }
+  </style>
+  <div class="whole">
+    <div style="padding:5px; margin-right: 10px;">
+      <img class="profile-pic" src="/channel-pictures/cat2.jpg" alt="">
+    </div>
+    <div>
+      <div style="font-weight: bold; margin-bottom: 5px;">supersimple.dev<span> @SuperSimpleDev</span></div>
+      <div>What is backend web development? A complete overview. New video is up!</div>
+      <div class="video">
+        <div style="background-color: rgb(220, 220, 220); width: 150px;"></div>
+        <div style="padding: 10px;">
+          <div>youtube.com</div>
+          <div>Backend web development - a complete overview (2021)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

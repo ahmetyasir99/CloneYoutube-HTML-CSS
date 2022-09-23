@@ -5,6 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
   <title>Flexbox Practice</title>
 </head>
 
@@ -95,6 +100,220 @@
     <div style="background-color: lightpink; width: 100px;">100px</div>
     <div style="background-color: lightblue; width: 100px;">100px</div>
   </div>
+
+  <!-- exercise -->
+  <div style="display: flex;">
+    <div style="background-color: lightblue; width: 200px;">200px</div>
+    <div style="background-color: lightpink; width: 75px;">75px</div>
+  </div>
+
+  <div style="display: flex;">
+    <div style="background-color: lightblue; width: 50px;">50px</div>
+    <div style="background-color: lightpink; flex: 1;">flex 1</div>
+    <div style="background-color: lightblue; width: 75px;">75px</div>
+  </div>
+
+  <div style="display: flex; justify-content: space-between;">
+    <div style="background-color: lightblue;">item1</div>
+    <div style="background-color: lightpink;">item2</div>
+    <div style="background-color: lightblue;">item3</div>
+    <div style="background-color: lightpink;">item2</div>
+  </div>
+
+  <div style="display: flex; height:50px; border: 1px solid black; justify-content: space-between; align-items: center; flex-direction: row;">
+    <div style="background-color: pink">item1</div>
+    <div style="background-color: pink">item2</div>
+  </div>
+
+  <style scoped>
+    .type {
+      background-color: blue;
+      color: white;
+      border-radius: 15px;
+      text-align: center;
+      width: 30px;
+      padding: 5px 5px;
+
+
+    }
+    .flexbox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0px;
+      padding: 0px 10px;
+    }
+  </style>
+  <div style="border: 1px rgba(76, 76, 76, 0.3) solid; width: 300px; border-radius: 5px;">
+    <div class="flexbox">
+      <div>Home</div>
+      <div class="type">14</div>
+    </div>
+    <div class="flexbox">
+      <div>Notifications</div>
+      <div class="type">3</div>
+    </div>
+    <div class="flexbox">
+      <div>Messages</div>
+      <div class="type">5</div>
+    </div>
+  </div>
+
+
+  <!-- exercise 2 -->
+  <style scoped>
+    .whole {
+      border: 1px solid black;
+      width: 300px;
+    }
+    .line {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+    .image-div {
+      width: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 5px;
+
+    }
+    .image {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 25px;   
+    }
+    .info {
+      flex: 1;
+    }
+    .name {
+      font-family: Roboto;
+      font-weight: bold;
+    }
+    .who {
+      font-family: Roboto;
+      color: rgba(76, 76, 76,0.7);
+    }
+    .pop {
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgba(76, 76, 76,0.7);
+      font-size: small;
+    }
+    .button-div {
+      width: 75px;
+    }
+    .follow {
+      background-color: blue;
+      color: white;
+      font-weight: bolder;
+      border: none;
+      border-radius: 3px;
+      padding: 7px 12px;
+    }
+    p {
+      margin: 0;
+    }
+  </style>
+
+  <div class="whole">
+    <div class="line">
+      <div class="image-div">
+        <img class="image" src="/channel-pictures/cat1.jpg" alt="">
+      </div>
+      <div class="info">
+        <p class="name">Mafia</p>
+        <p class="who">the cat</p>
+        <p class="pop">Popular</p>
+      </div>
+      <div class="button-div">
+        <button class="follow">Follow</button>
+      </div>
+    </div>
+
+    <div class="line">
+      <div class="image-div">
+        <img class="image" src="/channel-pictures/cat2.jpg" alt="">
+      </div>
+      <div class="info">
+        <p class="name">Psycho</p>
+        <p class="who">the cat</p>
+        <p class="pop">Popular</p>
+      </div>
+      <div class="button-div">
+        <button class="follow">Follow</button>
+      </div>
+    </div>
+
+    <div class="line">
+      <div class="image-div">
+        <img class="image" src="/thumbnails/142774.jpg" alt="">
+      </div>
+      <div class="info">
+        <p class="name">Brave</p>
+        <p class="who">the cat</p>
+        <p class="pop">Popular</p>
+      </div>
+      <div class="button-div">
+        <button class="follow">Follow</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- exercise 3 -->
+
+  <style>
+    .bar {
+      height: 60px;
+      background-color: rgb(120, 82, 178);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 15px;
+    }
+    .home {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: medium;
+      font-weight: bold;
+    }
+    .search {
+      width: 400px;
+      height: 30px;
+      border: none;
+      border-radius: 15px;
+      padding-left: 10px;
+    }
+    .button {
+      background-color: rgb(120, 82, 178);
+      color: white;
+      border: 1px solid white;
+      padding: 7px 10px;
+    }
+
+  </style>
+
+  <div class="bar">
+    <div class="home">Home</div>
+    <input class="search" type="text" placeholder="Search">
+    <button class="button">Download</button>
+  </div>
+
+  <!-- exercise 4 -->
+
+  <div style="display: flex; height: 100px; margin-bottom: 5px;">
+    <div style="width:100px;background-color: pink; display: flex; justify-content: center; align-items: center;">
+      <div>item1</div>
+    </div>
+    <div style="width: 200px; background-color: blue;"></div>
+  </div>
+
+ 
+  
 
 </body>
 
