@@ -15,6 +15,13 @@ best practice ise giving padding to body, not giving margin-top to first element
 */
 padding-left: 80px; /*avoiding conflict between sidebar and other elements*/
 ">
+
+  <!-- position:fixed fix the element according to browser window and it displays everytime.
+  position: relative is used for when wish to add new element inside of this element,
+  it is not change anything.
+  position: absolute is used for locate the element regarding of parent element,
+  it fixes the position according to parent shape. The parent can be either body or another div. -->
+
   <div style="
   background-color: black;
   color:white;
@@ -23,6 +30,7 @@ padding-left: 80px; /*avoiding conflict between sidebar and other elements*/
   left: 0px;/*if opposites are used, the element stretch*/
   right:0px;
   height: 50px;
+  z-index: 100; /*determine which element appers front and behind, default 0*/
   ">Header</div>
 
   <div style="
@@ -35,6 +43,17 @@ padding-left: 80px; /*avoiding conflict between sidebar and other elements*/
   width: 72px;
   ">
     sidebar
+    <div style="
+    position:absolute; /* when absolute element in a fixed element, it locates itself 
+    according to parent fixed element. Used for static fixed element, when fixed element
+    location is also varying, position relative should be used*/
+    background-color:red;
+    color:white;
+    right:0px;
+    top:0px;
+    ">
+      X
+    </div>
   </div>
 
   <div style="
@@ -45,7 +64,7 @@ padding-left: 80px; /*avoiding conflict between sidebar and other elements*/
   top: 50px;
   bottom: 0;
   ">
-  right-sidebar
+    right-sidebar
   </div>
 
   <div style="
@@ -57,6 +76,19 @@ padding-left: 80px; /*avoiding conflict between sidebar and other elements*/
   ">
     bottom-right
   </div>
+
+  <div style="
+  position:absolute; /*placed on the page, not browser window
+  in this way, we can fix the element accourding to pixels 
+  regarding of the page, when scrolling, element does not show fixed all time*/
+  background-color:red;
+  color:white;
+  right:60px;
+  top:100px;
+  ">
+    absolute
+  </div>
+
   <div style="
   background-color: lightblue;
   height: 200px;
@@ -66,9 +98,100 @@ padding-left: 80px; /*avoiding conflict between sidebar and other elements*/
   background-color: lightpink;
   height: 200px;
   width: 200px;
-  ">div2</div>
+  position: relative;
+  ">div2
+    <div style="
+    position:absolute; /* for changing positions, parent's position should be relative
+    (it is not change anything) and child's position should be absolute to obtain a certain
+    positioning inside the parent*/
+    background-color:black;
+    color:white;
+    bottom: 10px;
+    right: 10px;
+    ">
+      05:00
+    </div>
+  </div>
+
+  <!-- exercise -->
 
   <div style="
+  background-color:black;
+  color: white;
+  position: absolute;
+  padding: 6px 9px;
+  border-radius: 20px;
+  top: 100px;
+  right: 200px;
+  ">
+    X
+  </div>
+
+  <div style="
+  width: 320px;
+  height: 180px;
+  background-color: gray;
+  position: fixed;
+  bottom: 10px;
+  right: 150px;
+  ">
+    <div style="
+background-color:black;
+color: white;
+position: absolute;
+padding: 6px 9px;
+border-radius: 20px;
+top: -10px;
+left: -10px;
+">
+      X
+    </div>
+    <div style="
+background-color:black;
+color:white;
+padding:5px 10px;
+position: absolute;
+bottom: 10px;
+right: 10px;
+">
+      0:29
+    </div>
+  </div>
+
+<div style="
+width:400px;
+height:400px;
+position: relative;
+">
+  <img style="width:400px;height:400px;object-fit: cover;" src="/thumbnails/wear.webp" alt="">
+  <div style="
+  background-color: black; 
+  color:white;
+  padding:10px 10px;
+  position: absolute;
+  top:10px;
+  right:0px
+  ">20% OFF</div>
+  <div style="
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  height: 120px;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  ">
+  <button style="
+  border: 1px solid black; 
+  padding: 5px 20px; 
+  background-color: white;
+  ">Add to Cart</button>
+  </div>
+</div>
+
+  <!-- <div style="
   position: fixed;
   right: 0;
   left: 0;
@@ -86,7 +209,7 @@ padding-left: 80px; /*avoiding conflict between sidebar and other elements*/
   border-radius:7px;
   padding: 15px;
   "><div>Modal Title</div>
-  <div>This is a modal</div></div>
+  <div>This is a modal</div></div> -->
 
   </div>
 </body>

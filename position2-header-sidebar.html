@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>position2</title>
 </head>
+
 <body style="background-color:black">
   <div style="
     background-color: white;
@@ -19,33 +21,87 @@
     align-items: center;
     padding: 0px 50px;
   ">
-  <div style="display:flex; align-items: center;">
-    <img style="
+    <div style="display:flex; align-items: center;">
+      <img style="
     width: 40px;
     height: 40px;
     object-fit: cover;
     border-radius: 25px;
     margin-right: 10px;
-    "
-    src="thumbnails/142774.jpg" alt="">
-    <div style="font-family: Arial;">Oliver Cat</div>
-  </div>
-  <div>
-    <button style="
+    " src="thumbnails/142774.jpg" alt="">
+      <div style="font-family: Arial;">Oliver Cat</div>
+    </div>
+    <div>
+      <button style="
     background-color: blue;
     border: none;
     color: white;
     border-radius: 5px;
     padding: 5px 10px;
     ">Add Friend</button>
-    <button style="
+      <button style="
     background-color: gray;
     border: none;
     color: black;
     border-radius: 5px;
     padding: 5px 10px;
     ">Message</button>
+    </div>
   </div>
+  <style>
+    .img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 35px;
+      margin-bottom: 5px;
+    }
+
+    .img-div {
+      width: 70px;
+    }
+
+    .matters {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: antiquewhite;
+    }
+  </style>
+  <div style="
+  background-color: green;
+  display:flex;
+  position: fixed;
+  top: 50px;
+  left: 0px;
+  bottom:0px;
+  ">
+    <div style=" background-color: rgb(39, 35, 35); width: 80px; padding-top: 20px;">
+      <!-- display: flex; flex-direction:column;
+      and add style=" display: flex; justify-content: center; align-items: center;" to the image div, it will be the same -->
+      <div style=" display: flex; justify-content: center; align-items: center; margin-top: 20px;"><img class="img"
+          src="/thumbnails/142774.jpg" alt=""></div>
+      <div style="display: flex; justify-content: center; align-items: center;"><img class="img"
+          src="/thumbnails/142774.jpg" alt=""></div>
+      <div style="display: flex; justify-content: center; align-items: center;"><img class="img"
+          src="/thumbnails/142774.jpg" alt=""></div>
+    </div>
+    <div style="
+    background-color:rgb(78, 72, 72);
+    width: 180px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    ">
+      <div style="display: flex; justify-content:space-between">
+        <div style="color: white;">INFO</div>
+        <div style="color: white;">+</div>
+      </div>
+      <div class="matters"># new-videos</div>
+      <div class="matters"># updates</div>
+      <div class="matters"># faq</div>
+    </div>
   </div>
 </body>
+
 </html>
